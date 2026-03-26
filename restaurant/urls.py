@@ -1,10 +1,16 @@
 from django.urls import path
 from . import views 
 from rest_framework.authtoken.views import obtain_auth_token
+from django.core import serializers
 
 urlpatterns = [
     path('', views.index, name='home'), 
     path('menu/', views.MenuItemsView.as_view()),
     path('menu/<int:pk>', views.SingleMenuItemView.as_view()),
     path('api-token-auth/', obtain_auth_token), 
+    path('about/', views.about, name="about"),
+     path('book/', views.book, name="book"),
+    path('menu/', views.menu, name="menu"),
+    path('menu_item/<int:pk>/', views.display_menu_item, name="menu_item"),  
+     path('bookings/', views.bookings, name="bookings"),
 ]
