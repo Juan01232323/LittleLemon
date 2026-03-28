@@ -37,24 +37,18 @@
 
 <script>
   console.log(`{{ bookings|safe }}`);
-  // 1. Usamos comillas invertidas (backticks `) para evitar errores con las comillas del JSON
   const rawData = `{{ bookings|safe }}`;
   
   try {
-    // 2. Convertimos el texto a un objeto real
     const bookings = JSON.parse(rawData);
     console.log("Datos cargados:", bookings);
 
-    // 3. Lo formateamos con espacios para que se vea como en la imagen
     const pretty_json = JSON.stringify(bookings, null, 2);
 
-    // 4. Lo insertamos en el elemento <pre>
-    // Asegúrate de que arriba tengas <pre id="bookings"></pre>
     document.getElementById('bookings').innerText = pretty_json;
     
   } catch (e) {
     console.error("Error al procesar el JSON:", e);
-    // Si falla el parse, al menos mostramos el texto crudo para que no esté vacío
     document.getElementById('bookings').innerText = rawData;
   }
 </script>
