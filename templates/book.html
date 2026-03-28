@@ -6,7 +6,7 @@
   <article>
     <h1>Make a reservation</h1>
     <div class="row">
-      <!-- Columna del Formulario -->
+
       <div class="column">
         <form action="{% url 'book' %}" method="POST" id="form">
           {% csrf_token %}
@@ -37,7 +37,7 @@
   </article>
 </section>
 <script>
-  /* 1. CONFIGURACIÓN INICIAL */
+
   const date = new Date();
   const month = (date.getMonth() + 1).toString().padStart(2, '0');
   const day = date.getDate().toString().padStart(2, '0');
@@ -46,13 +46,13 @@
   document.getElementById('reservation_date').value = today;
   document.getElementById('today').innerHTML = today;
 
-  /* 2. FUNCIÓN PARA GENERAR LOS HORARIOS (ESTO ARREGLA TU IMAGEN) */
+ 
   function getBookings() {
     let reserved_slots = [];
     const dateSelected = document.getElementById('reservation_date').value;
     document.getElementById('today').innerHTML = dateSelected;
 
-    // Llamamos a la API para ver qué horas están ocupadas
+    
     fetch("{% url 'bookings' %}" + '?date=' + dateSelected)
       .then(r => r.json())
       .then(data => {
@@ -64,7 +64,6 @@
 bookingsHTML += `<p>${item.first_name} - ${formatTime(item.reservation_slot)}</p>`;
         }
 
-        /* --- GENERACIÓN DINÁMICA DE OPCIONES --- */
         let slot_options = '<option value="0" disabled>Select time</option>';
         
         // Creamos las horas de 10 AM (10) a 8 PM (20)
@@ -79,7 +78,6 @@ bookingsHTML += `<p>${item.first_name} - ${formatTime(item.reservation_slot)}</p
           }
         }
         
-        // RELLENAR EL SELECTOR (Lo que te falta en la imagen)
         document.getElementById('reservation_slot').innerHTML = slot_options;
         document.getElementById('bookings').innerHTML = bookingsHTML || "No hay reservas para esta fecha";
       });
@@ -108,15 +106,13 @@ bookingsHTML += `<p>${item.first_name} - ${formatTime(item.reservation_slot)}</p
       body: JSON.stringify(formdata)
     })
     .then(response => {
-      getBookings(); // Actualizar lista y horarios tras guardar
+      getBookings();
       document.getElementById('first_name').value = "";
     });
   });
 
-  // Eventos para actualizar la lista
   document.getElementById('reservation_date').addEventListener('change', getBookings);
   
-  // ESTO ASEGURA QUE SE LLENE AL CARGAR
   window.addEventListener('load', getBookings);
 </script>
 
