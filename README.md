@@ -199,8 +199,3 @@ Juan Carlos Reynoso Zúñiga
 ```bash
 Back-End Developer
 ```
-
-```bash
-
-Certificado en desarrollo backend por Meta, enfocado en construir APIs robustas y escalables.
-```
