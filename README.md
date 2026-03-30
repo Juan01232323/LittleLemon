@@ -154,23 +154,28 @@ python -m venv env
 source env/bin/activate   # Linux/Mac
 env\Scripts\activate      # Windows
 ```
+### 3. Instalacion de django en la maquina virtual
+```bash
+
+pip install django
+```
 
 
-### 3. Instalar dependencias
+### 4. Instalar dependencias
 ```bash
 
 pip install -r requirements.txt
 
 ```
 
-### 4. Migraciones
+### 5. Migraciones
 ```bash
 
 python manage.py makemigrations
 python manage.py migrate
 ```
 
-### 5. Ejecutar servidor
+### 6. Ejecutar servidor
 ```bash
 
 python manage.py runserver
