@@ -93,8 +93,8 @@ Construir una API backend escalable que permita:
 
 ### 🔐 Autenticación
 
-- `POST /api/users/` → Registro  
-- `POST /api/token/login/` → Login  
+- `POST /restaurant/users/` → Registro  
+- `POST /restaurant/token/login/` → Login  
 
 ---
 
