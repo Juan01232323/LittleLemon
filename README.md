@@ -219,3 +219,35 @@ Juan Carlos Reynoso Zúñiga
 ```bash
 Back-End Developer
 ```
+
+<img width="1917" height="942" alt="image" src="https://github.com/user-attachments/assets/e781922d-a4ec-40a1-8a16-735d1ce2d49b" />
+
+<img width="1919" height="937" alt="image" src="https://github.com/user-attachments/assets/7bd55ee6-9e14-4e7c-93e1-cdec07f487a1" />
+
+<img width="1910" height="942" alt="image" src="https://github.com/user-attachments/assets/863d231b-2b81-4561-afb3-e99c66ba2911" />
+
+
+<img width="1919" height="947" alt="image" src="https://github.com/user-attachments/assets/44a9793e-c543-4a5f-91e6-4acbf72ba6a2" />
+
+<img width="1914" height="947" alt="image" src="https://github.com/user-attachments/assets/d99948ee-8469-41c2-be1e-8dfb1cbd0cb5" />
+
+<img width="1919" height="952" alt="image" src="https://github.com/user-attachments/assets/c0911de2-04ed-4cfa-9674-6281cca0f7b5" />
+
+<img width="1915" height="939" alt="image" src="https://github.com/user-attachments/assets/05474e3d-0686-43d5-8f30-8a50f6136361" />
+
+<img width="1916" height="948" alt="image" src="https://github.com/user-attachments/assets/fb133f53-eb33-483b-8489-a00cd30aded8" />
+
+<img width="1911" height="934" alt="image" src="https://github.com/user-attachments/assets/c3b3a4ba-ebc7-45e4-87d9-db65d71f448a" />
+
+<img width="1919" height="954" alt="image" src="https://github.com/user-attachments/assets/076c7baa-f028-498d-83ba-af025e9f3496" />
+
+<img width="1919" height="943" alt="image" src="https://github.com/user-attachments/assets/56344eb3-6417-4a9b-b49a-0ae17c1344a0" />
+
+<img width="1915" height="950" alt="image" src="https://github.com/user-attachments/assets/802c8f9b-c0e4-49ef-bbdc-f693a912e668" />
+
+<img width="1919" height="943" alt="image" src="https://github.com/user-attachments/assets/74e14c76-4576-44f4-925a-bab6ca8b1383" />
+
+<img width="1918" height="942" alt="image" src="https://github.com/user-attachments/assets/17290527-650a-4e84-8de7-a1808c8fbeb5" />
+
+
+
