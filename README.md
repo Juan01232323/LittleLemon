@@ -165,32 +165,32 @@ pip install django
 pip install djangorestframework
 ```
 
-### 4. Instalacion de djoser en la maquina virtual
+### 5. Instalacion de djoser en la maquina virtual
 ```bash
 pip install djoser
 ```
 
-### 4. Instalacion de mysql en la maquina virtual
+### 6. Instalacion de mysql en la maquina virtual
 ```bash
 
 pip install mysqlclient
 ```
 
-### 4. Instalar dependencias
+### 7. Instalar dependencias
 ```bash
 
 pip install -r requirements.txt
 
 ```
 
-### 5. Migraciones
+### 8. Migraciones
 ```bash
 
 python manage.py makemigrations
 python manage.py migrate
 ```
 
-### 6. Ejecutar servidor
+### 9. Ejecutar servidor
 ```bash
 
 python manage.py runserver
