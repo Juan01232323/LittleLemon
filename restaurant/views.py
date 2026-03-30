@@ -61,7 +61,6 @@ def bookings(request):
     if date:
         bookings_data = Booking.objects.filter(booking_date=date)
         data = list(bookings_data.values())
-        # Usamos el codificador de Django aquí para que no falle con las fechas
         return JsonResponse(data, safe=False, encoder=DjangoJSONEncoder)
     else:
         bookings_data = Booking.objects.all()
