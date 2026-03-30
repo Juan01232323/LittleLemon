@@ -159,7 +159,22 @@ env\Scripts\activate      # Windows
 
 pip install django
 ```
+### 4. Instalacion de djangorestframework en la maquina virtual
+```bash
 
+pip install djangorestframework
+```
+
+### 4. Instalacion de djoser en la maquina virtual
+```bash
+pip install djoser
+```
+
+### 4. Instalacion de mysql en la maquina virtual
+```bash
+
+pip install mysqlclient
+```
 
 ### 4. Instalar dependencias
 ```bash
