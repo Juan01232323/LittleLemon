@@ -1,19 +1,4 @@
-# ⚙️ Meta Back-End Developer Capstone Project
-
-Proyecto final del **Certificado Profesional de Desarrollador Back-End de Meta**, enfocado en el desarrollo de una API REST robusta para la gestión de reservas de restaurante.
-
-Este proyecto demuestra habilidades en desarrollo backend utilizando **Python, Django, Django REST Framework, MySQL y autenticación basada en tokens**, siguiendo buenas prácticas de arquitectura y diseño de APIs.
-
----
-
-## 🎓 Certificación
-
-Este proyecto forma parte del programa:
-
-**Meta Back-End Developer Professional Certificate**  
-by Meta Platforms
-
----
+# LittleLemon API: Sistema de Gestión de Reservas
 
 ## 🚀 Descripción del Proyecto
 
