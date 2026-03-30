@@ -100,17 +100,17 @@ Construir una API backend escalable que permita:
 
 ### 🍽️ Menú
 
-- `GET /api/menu-items/` → Listar menú  
-- `POST /api/menu-items/` → Crear platillo (admin)  
-- `PUT /api/menu-items/{id}` → Actualizar  
-- `DELETE /api/menu-items/{id}` → Eliminar  
+- `GET /restaurant/menu-items/` → Listar menú  
+- `POST /restaurant/menu-items/` → Crear platillo (admin)  
+- `PUT /restaurant/menu-items/{id}` → Actualizar  
+- `DELETE /restaurant/menu-items/{id}` → Eliminar  
 
 ---
 
 ### 📅 Reservas
 
-- `GET /api/bookings/` → Listar reservas  
-- `POST /api/bookings/` → Crear reserva  
+- `GET /restaurant/bookings/` → Listar reservas  
+- `POST /restaurant/bookings/` → Crear reserva  
 
 ---
 
@@ -247,6 +247,13 @@ Back-End Developer
 <img width="1919" height="943" alt="image" src="https://github.com/user-attachments/assets/74e14c76-4576-44f4-925a-bab6ca8b1383" />
 
 <img width="1918" height="942" alt="image" src="https://github.com/user-attachments/assets/17290527-650a-4e84-8de7-a1808c8fbeb5" />
+
+
+<img width="1919" height="944" alt="image" src="https://github.com/user-attachments/assets/9e147700-cb6b-4c30-9924-7b2ba9b1c9aa" />
+
+<img width="1919" height="943" alt="image" src="https://github.com/user-attachments/assets/846e27a7-28b6-4da3-a778-77eabcf49b4f" />
+
+
 
 
 
