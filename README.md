@@ -256,5 +256,7 @@ Back-End Developer
 
 <img width="1919" height="945" alt="image" src="https://github.com/user-attachments/assets/eba3974c-03f4-4974-ab20-28732127e4e5" />
 
+<img width="1919" height="939" alt="image" src="https://github.com/user-attachments/assets/7a9f285e-a30b-4c24-b05c-6a6bae633f2e" />
 
+<img width="1919" height="952" alt="image" src="https://github.com/user-attachments/assets/9fbb59b1-e739-4f32-b902-6a72fc4d5c17" />
 
