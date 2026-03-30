@@ -41,7 +41,6 @@ def book(request):
     if request.method == 'POST':
         data = json.loads(request.body) # Cambia json.load por json.loads(request.body)
         
-        # Mapeamos los datos que vienen del formulario a los campos de tu MODELO
         booking = Booking(
             first_name=data['first_name'],
             booking_date=data['reservation_date'], # 'reservation_date' del form va a 'booking_date' del modelo
@@ -67,10 +66,8 @@ def bookings(request):
     else:
         bookings_data = Booking.objects.all()
         data = list(bookings_data.values())
-        # Aquí también usamos el codificador para la variable que va al render
         json_data = json.dumps(data, cls=DjangoJSONEncoder)
 
-    # Mantenemos tu línea esencial intacta
     return render(request, 'bookings.html', {"bookings": json_data})
 
 
