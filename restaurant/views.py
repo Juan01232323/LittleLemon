@@ -39,15 +39,15 @@ def about(request):
 @csrf_exempt 
 def book(request):
     if request.method == 'POST':
-        data = json.loads(request.body) # Cambia json.load por json.loads(request.body)
+        data = json.loads(request.body) 
         
         booking = Booking(
             first_name=data['first_name'],
-            booking_date=data['reservation_date'], # 'reservation_date' del form va a 'booking_date' del modelo
-            no_of_guests=data.get('no_of_guests', 1) # Si el form no tiene invitados, ponemos 1 por defecto
+            booking_date=data['reservation_date'],
+            no_of_guests=data.get('no_of_guests', 1) 
         )
         booking.save()
-        return JsonResponse({"status": "success"}) # Es buena práctica retornar un JSON en un POST de este tipo
+        return JsonResponse({"status": "success"}) 
         
     return render(request, 'book.html')
 
