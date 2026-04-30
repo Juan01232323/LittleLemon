@@ -1,29 +1,29 @@
-# LittleLemon API: Sistema de Gestión de Reservas
+# LittleLemon API: Reservation Management System
 
-## 🚀 Descripción del Proyecto
+## 🚀 Project Description
 
-El sistema permite gestionar operaciones clave de un restaurante:
+The system allows you to manage key restaurant operations:
 
-- Gestión de usuarios y autenticación
-- Creación y administración de reservas
-- Administración de menús
-- Control de acceso basado en roles
-- API REST completamente funcional
-
----
-
-## 🧠 Objetivo
-
-Construir una API backend escalable que permita:
-
-- Manejo de datos persistentes
-- Seguridad en endpoints
-- Separación de responsabilidades
-- Integración con clientes frontend o herramientas como Postman
+- User management and authentication
+- Reservation creation and management
+- Menu management
+- Role-based access control
+- Fully functional REST API
 
 ---
 
-## 🛠️ Stack Tecnológico
+## 🧠 Objective
+
+To build a scalable backend API that allows:
+
+- Persistent data management
+- Endpoint security
+- Separation of responsibilities
+- Integration with frontend clients or tools like Postman
+
+---
+
+## 🛠️ Technology Stack
 
 | Área                 | Tecnología                     |
 |----------------------|-------------------------------|
@@ -36,146 +36,155 @@ Construir una API backend escalable que permita:
 
 ---
 
-## ⚙️ Funcionalidades Principales
+## ⚙️ Main Features
 
-### 🔐 Autenticación y Autorización
+### 🔐 Authentication and Authorization
 
-- Registro de usuarios
-- Login mediante token
-- Protección de endpoints
-- Control de acceso por roles:
-  - Administrador
-  - Usuario (cliente)
+- User registration
+- Token login
+- Endpoint protection
+- Access control by role:
 
----
+- Administrator
 
-### 📋 Gestión de Menú
-
-- Crear, editar y eliminar platillos
-- Listado de productos disponibles
-- Filtrado y ordenamiento
+- User (client)
 
 ---
 
-### 📅 Sistema de Reservas
+### 📋 Menu Management
 
-- Crear reservas
-- Validación de disponibilidad
-- Consulta de reservas por usuario
-- Administración de reservas (admin)
-
----
-
-### 🧾 Gestión de Pedidos (Opcional)
-
-- Crear órdenes
-- Ver historial de pedidos
-- Estado de pedidos
+- Create, edit, and delete dishes
+- List of available products
+- Filtering and sorting
 
 ---
 
-## 🔌 Endpoints Principales
+### 📅 Reservation System
 
-### 🔐 Autenticación
-
-- `POST /restaurant/users/` → Registro  
-- `POST /restaurant/token/login/` → Login  
-
----
-
-### 🍽️ Menú
-
-- `GET /restaurant/menu-items/` → Listar menú  
-- `POST /restaurant/menu-items/` → Crear platillo (admin)  
-- `PUT /restaurant/menu-items/{id}` → Actualizar  
-- `DELETE /restaurant/menu-items/{id}` → Eliminar  
+- Create reservations
+- Availability check
+- View reservations by user
+- Reservation management (admin)
 
 ---
 
-### 📅 Reservas
+### 🧾 Order Management (Optional)
 
-- `GET /restaurant/bookings/` → Listar reservas  
-- `POST /restaurant/bookings/` → Crear reserva  
+- Create orders
+- View order history
+- Order status
 
 ---
 
-## 🗄️ Base de Datos
+## 🔌 Main Endpoints
 
-Modelos principales:
+### 🔐 Authentication
+
+- `POST /restaurant/users/` → Registration
+- `POST /restaurant/token/login/` → Login
+
+---
+
+### 🍽️ Menu
+
+- `GET /restaurant/menu-items/` → List menu
+
+- `POST /restaurant/menu-items/` → Create dish (admin)
+
+- `PUT /restaurant/menu-items/{id}` → Update
+
+- `DELETE /restaurant/menu-items/{id}` → Delete
+
+---
+
+### 📅 Reservations
+
+- `GET /restaurant/bookings/` → List reservations
+
+- `POST /restaurant/bookings/` → Create reservation
+
+---
+
+## 🗄️ Database
+
+Models Main components:
 
 - User
-- MenuItem
+- Menu Item
 - Booking
 
-Relaciones:
+Relationships:
 
-- Un usuario puede tener múltiples reservas  
-- Los administradores gestionan el menú  
-
----
-
-## 🔄 Flujo de Uso
-
-1. Usuario se registra o inicia sesión  
-2. Obtiene token de autenticación  
-3. Consume endpoints protegidos  
-4. Realiza reservas o consulta el menú  
-5. Admin gestiona datos del sistema  
+- A user can have multiple reservations
+- Administrators manage the menu
 
 ---
 
-## 🚀 Instalación y Ejecución
+## 🔄 Usage Flow
 
-### 1. Clonar repositorio
+1. User registers or logs in
 
+2. Obtains authentication token
 
-git clone https://github.com/tu-repositorio
+3. Consumes protected endpoints
 
+4. Makes reservations or views the menu
 
-### 2. Crear entorno virtual
+5. Admin manages system data
+
+---
+
+## 🚀 Installation and Execution
+
+### 1. Clone repository
+
+git clone https://github.com/your-repository
+
+### 2. Create virtual environment
 
 ```bash
 python -m venv env
-source env/bin/activate   # Linux/Mac
-env\Scripts\activate      # Windows
+
+source env/bin/activate # Linux/Mac
+env\Scripts\activate # Windows
 ```
-### 3. Instalacion de django en la maquina virtual
+### 3. Install Django in the virtual machine
 ```bash
 
-pip install django
+pip install Django
 ```
-### 4. Instalacion de djangorestframework en la maquina virtual
+### 4. Installing Django Rest Framework on the Virtual Machine
 ```bash
 
 pip install djangorestframework
 ```
 
-### 5. Instalacion de djoser en la maquina virtual
+### 5. Installing djoser on the Virtual Machine
 ```bash
 pip install djoser
 ```
 
-### 6. Instalacion de mysql en la maquina virtual
+### 6. Installing MySQL on the Virtual Machine
 ```bash
 
 pip install mysqlclient
 ```
 
-### 7. Instalar dependencias
+### 7. Installing Dependencies
 ```bash
 
 pip install -r requirements.txt
 
 ```
 
-### 8. Migraciones
+### 8. Migrations
 ```bash
 
 python manage.py makemigrations
 python manage.py migrate
 ```
 
-### 9. Ejecutar servidor
+### 9. Running the Server
 ```bash
 
 python manage.py runserver
@@ -183,28 +192,27 @@ python manage.py runserver
 
 ### 🧪 Testing
 
-Puedes probar la API usando:
+You can test The API using:
 
 * Postman
 * Insomnia
 * cURL
 
-## 📈 Habilidades Demostradas
-* Desarrollo de APIs REST
-* Uso de Django REST Framework
-* Autenticación y autorización
-* Modelado de bases de datos
-* Manejo de rutas y endpoints
-* Buenas prácticas de backend
+## 📈 Demonstrated Skills
+* REST API Development
+* Using Django REST Framework
+* Authentication and Authorization
+* Database Modeling
+* Route and Endpoint Management
+* Backend Best Practices
 
-## 👨‍💻 Autor
-```bash
+## 👨‍💻 Author
+```Bash
 Juan Carlos Reynoso Zúñiga
 ```
-```bash
+```Bash
 Back-End Developer
 ```
-
 <img width="1917" height="942" alt="image" src="https://github.com/user-attachments/assets/e781922d-a4ec-40a1-8a16-735d1ce2d49b" />
 
 <img width="1919" height="937" alt="image" src="https://github.com/user-attachments/assets/7bd55ee6-9e14-4e7c-93e1-cdec07f487a1" />
