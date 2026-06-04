@@ -8,7 +8,7 @@
 ![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=jsonwebtokens)
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 
-## 🚀 Project Description
+##  Project Description
 
 The system allows you to manage key restaurant operations:
 
@@ -20,7 +20,7 @@ The system allows you to manage key restaurant operations:
 
 ---
 
-## 🧠 Objective
+##  Objective
 
 To build a scalable backend API that allows:
 
@@ -31,7 +31,7 @@ To build a scalable backend API that allows:
 
 ---
 
-## 🛠️ Technology Stack
+##  Technology Stack
 
 | Área                 | Tecnología                     |
 |----------------------|-------------------------------|
@@ -44,9 +44,9 @@ To build a scalable backend API that allows:
 
 ---
 
-## ⚙️ Main Features
+##  Main Features
 
-### 🔐 Authentication and Authorization
+###  Authentication and Authorization
 
 - User registration
 - Token login
@@ -59,7 +59,7 @@ To build a scalable backend API that allows:
 
 ---
 
-### 📋 Menu Management
+###  Menu Management
 
 - Create, edit, and delete dishes
 - List of available products
@@ -67,7 +67,7 @@ To build a scalable backend API that allows:
 
 ---
 
-### 📅 Reservation System
+###  Reservation System
 
 - Create reservations
 - Availability check
@@ -76,7 +76,7 @@ To build a scalable backend API that allows:
 
 ---
 
-### 🧾 Order Management (Optional)
+###  Order Management (Optional)
 
 - Create orders
 - View order history
@@ -84,16 +84,16 @@ To build a scalable backend API that allows:
 
 ---
 
-## 🔌 Main Endpoints
+##  Main Endpoints
 
-### 🔐 Authentication
+###  Authentication
 
 - `POST /restaurant/users/` → Registration
 - `POST /restaurant/token/login/` → Login
 
 ---
 
-### 🍽️ Menu
+###  Menu
 
 - `GET /restaurant/menu-items/` → List menu
 
@@ -105,7 +105,7 @@ To build a scalable backend API that allows:
 
 ---
 
-### 📅 Reservations
+###  Reservations
 
 - `GET /restaurant/bookings/` → List reservations
 
@@ -113,7 +113,7 @@ To build a scalable backend API that allows:
 
 ---
 
-## 🗄️ Database
+##  Database
 
 Models Main components:
 
@@ -128,7 +128,7 @@ Relationships:
 
 ---
 
-## 🔄 Usage Flow
+##  Usage Flow
 
 1. User registers or logs in
 
@@ -142,7 +142,7 @@ Relationships:
 
 ---
 
-## 🚀 Installation and Execution
+##  Installation and Execution
 
 ### 1. Clone repository
 
@@ -198,7 +198,7 @@ python manage.py migrate
 python manage.py runserver
 ```
 
-### 🧪 Testing
+###  Testing
 
 You can test The API using:
 
@@ -206,7 +206,7 @@ You can test The API using:
 * Insomnia
 * cURL
 
-## 📈 Demonstrated Skills
+##  Demonstrated Skills
 * REST API Development
 * Using Django REST Framework
 * Authentication and Authorization
@@ -214,7 +214,7 @@ You can test The API using:
 * Route and Endpoint Management
 * Backend Best Practices
 
-## 👨‍💻 Author
+##  Author
 ```Bash
 Juan Carlos Reynoso Zúñiga
 ```
